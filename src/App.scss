@@ -1,0 +1,87 @@
+@import './components/assets/styles/header.scss';
+@import './components/assets/styles/bootstrap.min.css';
+@import './components/assets/styles/body.scss';
+@import './components/assets/styles/home.scss';
+@import './components/assets//styles//about.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,400;1,500;1,900&display=swap');
+@import './components/assets/styles/contact.scss';
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;700&display=swap');
+@import './components/assets/styles/work.scss';
+@import './components/assets//styles/workhome.scss';
+@import './components/assets/styles/progress.scss';
+@import './components/assets//styles/information.scss';
+@import './components//Widgets/workContent.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #232931fa;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.App {
+  color: #eeeeee;
+  max-width: 1920px;
+  margin: auto;
+}
+.slick-arrow {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #393e46;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.footer {
+  margin-top: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: rgb(51, 49, 49);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.home,
+.about,
+.project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 400ms;
+}
+
+.fade-exit {
+  opacity: 0;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms linear;
+}

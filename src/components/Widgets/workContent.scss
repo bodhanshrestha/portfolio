@@ -1,0 +1,175 @@
+@media only screen and (max-width: 502px) {
+  .broadwayProjects h1 {
+    font-size: 3em;
+  }
+  .completedProjects .projectInfo h1 {
+    font-size: 3em !important;
+  }
+  .fieldVisit {
+    font-size: 2em !important;
+  }
+  .broadwayProjects ul {
+    list-style: none;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  .completedProjects {
+    padding: 40px 10px !important;
+  }
+}
+@media only screen and (max-width: 386px) {
+  .broadwayProjects h1 {
+    font-size: 2em;
+  }
+  .completedProjects .projectInfo h1 {
+    font-size: 2em !important;
+  }
+  .fieldVisit {
+    font-size: 1.5em !important;
+  }
+  .completedProjects {
+    padding: 40px 5px !important;
+  }
+}
+
+.completedProjects {
+  padding: 40px 20px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #20252c, #252c34);
+  box-shadow: 20px 20px 60px #1e232a, -20px -20px 60px #282f38;
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    background: #232931;
+    box-shadow: inset 20px 20px 60px #1e232a, -20px -20px 60px #282f38;
+
+    transform: translate(-3px, -2px);
+  }
+  .projectImageFull {
+    width: 100%;
+    max-height: 600px;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+  .projectInfo {
+    padding: 20px;
+    h1 {
+      width: 100%;
+      font-size: 4em;
+      font-weight: 900;
+      letter-spacing: 2px;
+      position: relative;
+      padding: 10px 0;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 10%;
+        height: 3px;
+        background: #ccb94e;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 5%;
+        height: 3px;
+        background: #ccb94e;
+      }
+    }
+    p {
+      padding: 0 10px;
+      font-size: 1.2em;
+    }
+  }
+  .fieldVisit {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 10px;
+    a {
+      text-decoration: none;
+      width: 50%;
+      display: block;
+      animation: linkColor 3s infinite;
+      position: relative;
+      span:nth-child(1) {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+        animation: circleMov1 4s infinite, circleMove 6s infinite;
+        @keyframes circleMove {
+          0% {
+            transform: translateX(0);
+            background: #ccb94e;
+          }
+          50% {
+            transform: translateX(50px) scale(1.5);
+            background: white;
+          }
+          100% {
+            transform: translateX(0);
+            background: #ccb94e;
+          }
+        }
+      }
+      span:nth-child(2) {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: #ccb94e;
+        border-radius: 50%;
+        animation: circleMove1 6s infinite;
+        @keyframes circleMove1 {
+          0% {
+            transform: translateX(0);
+            background: #ccb94e;
+          }
+          50% {
+            transform: translateX(100px) scale(2);
+            background: white;
+          }
+          100% {
+            transform: translateX(0);
+            background: #ccb94e;
+          }
+        }
+      }
+      span:nth-child(3) {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: #ccb94e;
+        border-radius: 50%;
+      }
+      @keyframes linkColor {
+        0% {
+          color: #ccb94e;
+        }
+        50% {
+          color: #e7d77e;
+        }
+        100% {
+          color: #ccb94e;
+        }
+      }
+    }
+  }
+}

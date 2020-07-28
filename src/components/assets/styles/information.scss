@@ -1,0 +1,67 @@
+.informationUser {
+  height: 20vh;
+  text-align: center;
+
+  .btn-primary {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    border: 0;
+    font-size: 0.7em;
+    color: #4ecca3;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    &:hover {
+      color: white;
+      transition: 0.5s;
+      box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9,
+        0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001,
+        inset -7px -7px 20px 0px #fff9, inset -4px -4px 5px 0px #fff9,
+        inset 7px 7px 20px 0px #0003, inset 4px 4px 5px 0px #0001;
+    }
+  }
+}
+
+.modal {
+  .modal-content {
+    background: #393e46;
+  }
+  h4 {
+    color: white;
+  }
+  .btn {
+    background: #4ecca3;
+  }
+  .close {
+    span {
+      color: wheat;
+    }
+  }
+  .modal-header,
+  .modal-footer {
+    border: 0 !important;
+  }
+  .modal-body {
+    width: 100%;
+
+    .userInput {
+      width: 100%;
+      input {
+        padding: 10px;
+        border: none;
+        border-left: 1px solid black;
+      }
+      input[type='text'] {
+        width: 50%;
+      }
+      input[type='email'] {
+        width: 50%;
+      }
+    }
+    .textarea {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
