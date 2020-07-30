@@ -53,22 +53,6 @@ export default class header extends Component {
                   </NavLink>
                 </li>
               ) : null}
-              {this.state.work ? (
-                <li>
-                  <NavLink
-                    to='/about'
-                    onClick={() =>
-                      this.setState({
-                        work: true,
-                        about: false,
-                        middleContent: true,
-                      })
-                    }
-                  >
-                    About
-                  </NavLink>
-                </li>
-              ) : null}
             </ul>
           </div>
           <div className='right'>

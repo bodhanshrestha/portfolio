@@ -81,11 +81,23 @@
   }
 }
 
+@media only screen and (max-width: 420px) {
+  .home .homeContainer .detailCon .detail h3 strong {
+    font-size: 2em !important;
+  }
+  .home .homeContainer .detailCon .detail p {
+    font-size: 1.4em !important;
+  }
+  .home .homeContainer .detailCon .detail .detailBTN {
+    margin-bottom: 30px !important;
+  }
+}
 @media only screen and (max-width: 380px) {
   .featuredProject .featured {
     font-size: 0.5em;
   }
 }
+
 .home {
   font-family: 'PT Sans Narrow', sans-serif;
   letter-spacing: 0.8px;
@@ -96,13 +108,16 @@
     width: 100%;
     height: 100%;
     position: relative;
+    margin-top: 20px;
     .detailCon {
       .detail {
+        color: gray;
         h3 {
+          font-weight: 600;
           text-align: left;
           strong {
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0 10px 0;
             font-size: 3em;
             display: block;
             color: #ccb94e;
@@ -110,9 +125,9 @@
         }
         p {
           padding: 40px 0;
-          font-size: 1.5em;
-          font-weight: 500;
-          letter-spacing: 2px;
+          font-weight: 600;
+          font-size: 1.8em;
+          letter-spacing: 3px;
         }
         .detailBTN {
           outline: none;
@@ -301,7 +316,7 @@
     margin: 0 30px 0 0;
     a {
       font-size: 2.5em;
-      color: white;
+      color: gray;
     }
     &:nth-child(1):hover {
       a {

@@ -1,60 +1,79 @@
-import React, { Component } from 'react';
-import Details from './Details';
-import ProgressBar from './Progress/progressbar';
-export default class about extends Component {
-  state = {
-    //About Section Props
-    firstName: 'Bodhan',
-    lastName: 'Shrestha',
-    address: 'Jorpati',
-    enrolled:
-      'BSc CSIT (Bachelors in Computer Science and Information Technology)',
-    college: 'St.Lawrence College',
-    profession: 'Web Developer and Web Designer',
-
-    //Contact props
-    phoneNo: '9860075925',
-    email: 'bodhanshrestha@gmail.com',
-    twitterUrl: '',
-    facebookUrl: 'https://www.facebook.com/bodhanshrestha/',
-    googleUrl: '',
-    linkedInUrl: 'https://www.linkedin.com/',
+import React, { useState, useEffect } from 'react';
+import Box from './Box/box';
+import {
+  faHistory,
+  faFilePdf,
+  faSmile,
+} from '@fortawesome/free-solid-svg-icons';
+import Past from './Past/Past';
+import Present from './Present/Present';
+const Index = () => {
+  const [about] = useState([
+    { id: 1, title: 'My Histroy', icon: faHistory },
+    { id: 2, title: 'My Present', icon: faSmile },
+    { id: 3, title: 'My Resume', icon: faFilePdf },
+  ]);
+  const [show, setShow] = useState(false);
+  const [CSSShow, setCSSShow] = useState(false);
+  const [howItWorks] = useState(React.createRef());
+  const scrollDown = () => {
+    window.scroll({
+      top: howItWorks.current.offsetTop + 100,
+      left: 0,
+      behavior: 'smooth',
+    });
   };
 
-  render() {
-    const {
-      firstName,
-      lastName,
-      Address,
-      enrolled,
-      college,
-      profession,
-    } = this.state;
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
 
-    return (
-      <div className='about'>
-        <div className='curser'></div>
-        <div className='container-fluid'>
-          <div className='row'>
-            <div className='col-lg-6 col-md-12'>
-              {/* Right Background Image of About */}
-            </div>
-            {/* Detail Component */}
-            <div className='col-lg-6 col-md-12'>
-              <Details
-                firstname={firstName}
-                lastname={lastName}
-                address={Address}
-                enrolled={enrolled}
-                college={college}
-                profession={profession}
-              />
-            </div>
+  return (
+    <div className='about'>
+      <div className='container'>
+        <div className='about-detail'>
+          <h1>About</h1>
+          <p>
+            If you're just curious about my past,my present or you just want to
+            grab my résumé,
+            <br /> you're in the right spot.
+          </p>
+        </div>
+        <div className='mainDisplay'>
+          <div
+            className='box-Container'
+            onClick={() => {
+              scrollDown();
+              setShow(true);
+              setCSSShow(true);
+              document.body.style.overflowY = 'scroll';
+            }}
+          >
+            <Box {...about[0]} />
+          </div>
+          <div
+            className='box-Container'
+            onClick={() => {
+              scrollDown();
+              setShow(false);
+              setCSSShow(true);
+              document.body.style.overflowY = 'scroll';
+            }}
+          >
+            <Box {...about[1]} />
+          </div>
+          <div className='box-Container'>
+            <Box {...about[2]} />
           </div>
         </div>
-
-        <ProgressBar />
+        <div className='detailedAbout' ref={howItWorks}>
+          <div className={CSSShow ? 'activeAbout' : 'hideAbout'}>
+            {show ? <Past /> : <Present />}
+          </div>
+        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Index;

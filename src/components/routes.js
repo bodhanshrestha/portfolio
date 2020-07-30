@@ -26,7 +26,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
 ));
 function routes() {
   return (
-    <div className='body-section mt-5'>
+    <div className='body-section'>
       <AnimatedSwitch />
     </div>
   );
