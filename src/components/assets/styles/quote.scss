@@ -1,0 +1,38 @@
+.quotes {
+  .title {
+    padding-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+  a {
+    text-decoration: none;
+    color: White;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    .quoteOfDay {
+      margin: 40px 0 60px 0;
+      padding: 160px 20px;
+      border-radius: 10px;
+      position: relative;
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      p {
+        font-style: italic;
+      }
+      span {
+        display: block;
+        font-size: 0.5em;
+        position: absolute;
+        top: 5px;
+        right: 5%;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

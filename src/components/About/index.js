@@ -7,9 +7,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Past from './Past/Past';
 import Present from './Present/Present';
+import ContactModel from '../Contact/model';
 const Index = () => {
   const [about] = useState([
-    { id: 1, title: 'My Histroy', icon: faHistory },
+    { id: 1, title: 'My Story', icon: faHistory },
     { id: 2, title: 'My Present', icon: faSmile },
     { id: 3, title: 'My Resume', icon: faFilePdf },
   ]);
@@ -23,7 +24,9 @@ const Index = () => {
       behavior: 'smooth',
     });
   };
-
+  const [visible, setVisible] = useState(false);
+  const openModel = () => setVisible(true);
+  const closeModal = () => setVisible(false);
   useEffect(() => {
     document.body.style.overflow = 'hidden';
   }, []);
@@ -65,6 +68,12 @@ const Index = () => {
           <div className='box-Container'>
             <Box {...about[2]} />
           </div>
+        </div>
+        <div className='contact-ab'>
+          <div className='btn-contact' onClick={() => openModel()}>
+            Contact Me
+          </div>
+          <ContactModel visible={visible} closeModal={closeModal} />
         </div>
         <div className='detailedAbout' ref={howItWorks}>
           <div className={CSSShow ? 'activeAbout' : 'hideAbout'}>

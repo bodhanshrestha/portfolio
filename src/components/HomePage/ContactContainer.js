@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ContactModel from '../Contact/model';
 const ContainerDetail = ({ que, btn, click }) => (
   <div className='circle' onClick={click}>
     <div className='textBtn'>
@@ -9,10 +10,10 @@ const ContainerDetail = ({ que, btn, click }) => (
   </div>
 );
 
-const contact = () => {
-  alert('Hello');
-};
 function ContactContainer() {
+  const [visible, setVisible] = useState(false);
+  const openModel = () => setVisible(true);
+  const closeModal = () => setVisible(false);
   return (
     <div className='container-fluid homepageContact'>
       <div className='row '>
@@ -23,7 +24,12 @@ function ContactContainer() {
         </div>
         <div className=' col-12 col-md-4  Containedcircle  '></div>
         <div className=' col-12 col-md-4  Containedcircle  '>
-          <ContainerDetail que='Intrested ?' btn='Contact Me' click={contact} />
+          <ContainerDetail
+            que='Intrested ?'
+            btn='Contact Me'
+            click={() => openModel()}
+          />
+          <ContactModel visible={visible} closeModal={closeModal} />
         </div>
       </div>
     </div>
