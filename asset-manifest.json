@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.097a2d7a.chunk.css",
-    "main.js": "/portfolio/static/js/main.cd54ea77.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.cd54ea77.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.f0c990b7.chunk.css",
+    "main.js": "/portfolio/static/js/main.9ec11676.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9ec11676.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.fb1b3dac.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.fb1b3dac.js.map",
     "static/css/2.0cac8c0b.chunk.css": "/portfolio/static/css/2.0cac8c0b.chunk.css",
-    "static/js/2.91a86c6a.chunk.js": "/portfolio/static/js/2.91a86c6a.chunk.js",
-    "static/js/2.91a86c6a.chunk.js.map": "/portfolio/static/js/2.91a86c6a.chunk.js.map",
+    "static/js/2.f4328b79.chunk.js": "/portfolio/static/js/2.f4328b79.chunk.js",
+    "static/js/2.f4328b79.chunk.js.map": "/portfolio/static/js/2.f4328b79.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.c8d6b1be4968fe43aacf4a7e148048e5.js": "/portfolio/precache-manifest.c8d6b1be4968fe43aacf4a7e148048e5.js",
+    "precache-manifest.f41f4aa66de08b9bf810f09c41587f4b.js": "/portfolio/precache-manifest.f41f4aa66de08b9bf810f09c41587f4b.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.0cac8c0b.chunk.css.map": "/portfolio/static/css/2.0cac8c0b.chunk.css.map",
-    "static/css/main.097a2d7a.chunk.css.map": "/portfolio/static/css/main.097a2d7a.chunk.css.map",
-    "static/js/2.91a86c6a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.91a86c6a.chunk.js.LICENSE.txt",
+    "static/css/main.f0c990b7.chunk.css.map": "/portfolio/static/css/main.f0c990b7.chunk.css.map",
+    "static/js/2.f4328b79.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f4328b79.chunk.js.LICENSE.txt",
     "static/media/2020-07-24_18-26-47.png": "/portfolio/static/media/2020-07-24_18-26-47.0d631825.png",
     "static/media/2020-07-24_18-28-42.png": "/portfolio/static/media/2020-07-24_18-28-42.2cb133ea.png",
     "static/media/2020-07-24_18-29-56.png": "/portfolio/static/media/2020-07-24_18-29-56.80dadbfa.png",
@@ -25,6 +25,7 @@
     "static/media/2020-07-24_19-43-01.png": "/portfolio/static/media/2020-07-24_19-43-01.3f0dd938.png",
     "static/media/2020-07-24_20-54-05.png": "/portfolio/static/media/2020-07-24_20-54-05.0a0bcbb8.png",
     "static/media/ai.svg": "/portfolio/static/media/ai.594733c9.svg",
+    "static/media/backgg.png": "/portfolio/static/media/backgg.e3a4db04.png",
     "static/media/App.scss": "/portfolio/static/media/c3.6d0732fd.png",
     "static/media/css3.svg": "/portfolio/static/media/css3.7ae4b13b.svg",
     "static/media/dreamweaver.svg": "/portfolio/static/media/dreamweaver.a2da4225.svg",
@@ -39,6 +40,7 @@
     "static/media/ps.svg": "/portfolio/static/media/ps.1343ae94.svg",
     "static/media/react.svg": "/portfolio/static/media/react.9a28da9f.svg",
     "static/media/slick-theme.css": "/portfolio/static/media/slick.f97e3bbf.svg",
+    "static/media/smallBoy.png": "/portfolio/static/media/smallBoy.9c03fced.png",
     "static/media/sublime-text.svg": "/portfolio/static/media/sublime-text.4ad5335f.svg",
     "static/media/visual-studio-code-1.svg": "/portfolio/static/media/visual-studio-code-1.e60fcd09.svg",
     "static/media/web.svg": "/portfolio/static/media/web.ffb1fb68.svg",
@@ -47,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.fb1b3dac.js",
     "static/css/2.0cac8c0b.chunk.css",
-    "static/js/2.91a86c6a.chunk.js",
-    "static/css/main.097a2d7a.chunk.css",
-    "static/js/main.cd54ea77.chunk.js"
+    "static/js/2.f4328b79.chunk.js",
+    "static/css/main.f0c990b7.chunk.css",
+    "static/js/main.9ec11676.chunk.js"
   ]
 }
