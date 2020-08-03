@@ -56,7 +56,7 @@ const Present = () => {
               location='Chabahil'
               level='Bachelor Level'
               date='2017-2021'
-              enrolled='Enrolled'
+              enrolled='Enrolled in Bsc.Csit'
             />
           </ul>
         </div>

@@ -8,6 +8,7 @@ import PORTO from '../assets/img/websites/2020-07-24_18-36-00.png';
 import TRAVELO from '../assets/img/websites/2020-07-24_18-38-46.png';
 import TRAX from '../assets/img/websites/2020-07-24_20-54-05.png';
 import CELEB from '../assets/img/websites/2020-07-24_181-16-43.png';
+import ToTop from '../ToTop';
 
 const URL = 'http://bodhanshrestha.com.np/';
 const Project = [
@@ -93,6 +94,7 @@ const broadway = () => {
       <ul>
         <ProjectLists />
       </ul>
+      <ToTop />
     </div>
   );
 };

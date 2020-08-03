@@ -4,6 +4,7 @@ import WorkList from './worklist';
 import broadwayImg from '../assets/img/broad.png';
 import Portfolio from './portfolio';
 import reactLogo from '../assets/img/logo512.png';
+import ToTop from '../ToTop';
 const Index = () => {
   useEffect(() => {
     document.body.style.overflowY = 'scroll';
@@ -31,6 +32,7 @@ const Index = () => {
         </Link>
       </div>
       <Portfolio />
+      <ToTop />
     </div>
   );
 };

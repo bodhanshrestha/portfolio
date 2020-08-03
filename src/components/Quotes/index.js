@@ -5,11 +5,10 @@ const Index = () => {
   const [quote, setQuote] = useState({});
   useEffect(() => {
     axios.get('https://quotes.rest/qod?category=inspire').then((res) => {
-      console.log(res);
       setQuote(res.data.contents.quotes[0]);
     });
   }, []);
-  console.log(quote.background);
+
   return (
     <>
       {quote.length > 0 ? (
@@ -29,6 +28,8 @@ const Index = () => {
                 marginLeft: '4px',
                 verticalAlign: 'middle',
               }}
+              rel='noopener noreferrer'
+              target='_blank'
             >
               They Said So®
             </a>

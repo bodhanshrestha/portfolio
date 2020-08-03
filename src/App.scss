@@ -16,6 +16,7 @@
 @import './components/assets/styles/information.scss';
 @import './components/Widgets/workContent.scss';
 @import './components/assets/styles/quote.scss';
+@import './components/assets/styles/topBtn.scss';
 * {
   margin: 0;
   padding: 0;
@@ -68,9 +69,11 @@ body {
 }
 .home,
 .about,
-.project {
-  position: absolute;
-  top: 0;
+.project,
+.reactProject,
+.broadwayProjects {
+  position: relative;
+  top: 100px;
   left: 0;
   width: 100%;
 }

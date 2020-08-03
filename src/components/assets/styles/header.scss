@@ -30,9 +30,7 @@ $med-green: #ccb94e;
       &:hover {
         .nameFlow {
           span {
-            &:nth-child(2) {
-              display: none;
-            }
+            display: none;
           }
         }
       }
@@ -59,8 +57,14 @@ $med-green: #ccb94e;
   @include flexed();
   padding: 10px 20px;
   font-family: 'Noto Sans JP', sans-serif;
+  background: $bg;
+  opacity: 0.95;
   box-shadow: 0px 2.5px 30px #2f3741;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .left {

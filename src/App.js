@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.scss';
-import Header from './components/header';
+import Header from './components/Header/header';
 import Body from './components/routes';
-function App() {
-  useEffect(() => {
-    document.body.style.overflowY = 'scroll';
-  }, []);
 
+function App() {
   return (
     <div className='App'>
       <Header />
