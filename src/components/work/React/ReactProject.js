@@ -1,8 +1,8 @@
 import React from 'react';
-import WorkContents from '../Widgets/WorkContents';
-import movie from '../assets/img/appImg/2020-07-24_19-42-42.png';
-import weather from '../assets/img/appImg/2020-07-24_19-43-01.png';
-import ToTop from '../ToTop';
+import WorkContents from '../../Widgets/WorkContentsMagnifier';
+import movie from '../../assets/img/appImg/2020-07-24_19-42-42.png';
+import weather from '../../assets/img/appImg/2020-07-24_19-43-01.png';
+import ToTop from '../../Helper/ToTop';
 const weatherURL = 'https://shrestha8050.github.io/Weather/';
 const movieURL = 'https://shrestha8050.github.io/Movie-Finder/#/';
 

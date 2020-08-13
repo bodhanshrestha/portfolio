@@ -8,7 +8,7 @@ import {
 import Past from './Past/Past';
 import Present from './Present/Present';
 import ContactModel from '../Contact/model';
-import ToTop from '../ToTop';
+import ToTop from '../Helper/ToTop';
 const Index = () => {
   const [about] = useState([
     { id: 1, title: 'My Story', icon: faHistory },

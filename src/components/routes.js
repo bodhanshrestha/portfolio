@@ -3,8 +3,8 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import Home from './HomePage';
 import Work from './work';
 import About from './About';
-import ReactProject from './React/ReactProject';
-import Broadway from './work/broadway';
+import ReactProject from './work/React/ReactProject';
+import Broadway from './work/BroadWay/broadway';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 const AnimatedSwitch = withRouter(({ location }) => (
   <TransitionGroup className='page'>

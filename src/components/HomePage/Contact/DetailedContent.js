@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialIcons from './SocialIcons';
+import SocialIcons from '../../Widgets/SocialIcons';
 function DetailedContent() {
   return (
     <div className='homeContainer'>
@@ -10,10 +10,9 @@ function DetailedContent() {
             <div className='detail'>
               <h3>
                 Hi , I'm
-                <strong> Bodhan Shrestha</strong>
+                <strong>Bodhan Shrestha</strong>
               </h3>
               <p>Web Designer and Developer from Kathmandu,Nepal</p>
-
               <Link to='/about'>
                 <button className='detailBTN'>More Details</button>
               </Link>

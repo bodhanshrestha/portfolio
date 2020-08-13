@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import WorkList from './worklist';
+import WorkList from './worklistBlock';
 import broadwayImg from '../assets/img/broad.png';
-import Portfolio from './portfolio';
+import Portfolio from './portfolioTimeline';
 import reactLogo from '../assets/img/logo512.png';
-import ToTop from '../ToTop';
+import ToTop from '../Helper/ToTop';
 const Index = () => {
   useEffect(() => {
     document.body.style.overflowY = 'scroll';
@@ -18,6 +18,7 @@ const Index = () => {
             name='React Js'
             bg={reactLogo}
             projectDetail1='Work done during practice'
+            projectDetail2='Use of API'
             color='white'
           />
         </Link>

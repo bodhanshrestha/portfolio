@@ -37,17 +37,21 @@ const Index = () => {
           <div className='container'>
             <div className='title'>{quote.title}</div>
             <a href={quote.permalink} rel='noopener noreferrer' target='_blank'>
-              <div
-                className=' quoteOfDay'
-                style={{
-                  background: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(${quote.background})`,
-                }}
-              >
-                <span>Aurther : {quote.author}</span>
+              <div className='quoteOfDay'>
+                <div
+                  className='background-quote'
+                  style={{
+                    background: `url(${quote.background})`,
+                  }}
+                ></div>
+                <div className='hover-quote'></div>
+                <div className='details'>
+                  <span>Aurther : {quote.author}</span>
 
-                <p>{quote.quote}</p>
+                  <p>{quote.quote}</p>
 
-                <span></span>
+                  <span></span>
+                </div>
               </div>
             </a>
           </div>

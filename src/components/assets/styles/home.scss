@@ -1,82 +1,62 @@
 @media only screen and (max-width: 988px) {
-  .homepageContact {
-    .Containedcircle {
-      .circle {
-        width: 300px !important;
-        height: 300px !important;
-      }
+  .Containedcircle {
+    .circle {
+      width: 300px !important;
+      height: 300px !important;
     }
+  }
+  .featuredProject:after {
+    font-size: 3.5em !important;
+    top: 3% !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  .homepageContact {
-    height: 300px !important;
-
-    .Containedcircle {
-      .circle {
-        width: 200px !important;
-        height: 200px !important;
-        .textBtn {
-          &:hover {
-            span {
-              font-size: 18px !important;
-            }
-            h1 {
-              font-size: 42px !important;
-            }
+  .Containedcircle {
+    .circle {
+      width: 200px !important;
+      height: 200px !important;
+      .textBtn {
+        &:hover {
+          span {
+            font-size: 18px !important;
+          }
+          h1 {
+            font-size: 42px !important;
           }
         }
       }
     }
   }
-  .homepageContact .Containedcircle .socialIocns .bottomIcons {
-    position: relative !important;
-    top: 50px;
-  }
 }
-@media only screen and (max-width: 474px) {
-  .homepageContact .Containedcircle .socialIocns .bottomIcons {
-    position: relative !important;
-    top: 27px;
-  }
-  .homepageContact {
-    height: 300px !important;
 
-    .Containedcircle {
-      .circle {
-        width: 180px !important;
-        height: 180px !important;
-        margin: auto !important;
-        .textBtn {
+@media only screen and (max-width: 474px) {
+  .featuredProject:after {
+    font-size: 2.5em !important;
+    top: 5% !important;
+  }
+
+  .Containedcircle {
+    .circle {
+      width: 150px !important;
+      height: 150px !important;
+      margin: auto !important;
+      .textBtn {
+        span {
+          font-size: 8px !important;
+        }
+        h1 {
+          font-size: 20px !important;
+        }
+        &:hover {
           span {
             font-size: 8px !important;
           }
           h1 {
             font-size: 20px !important;
           }
-          &:hover {
-            span {
-              font-size: 8px !important;
-            }
-            h1 {
-              font-size: 20px !important;
-            }
-          }
         }
       }
     }
-  }
-}
-@media only screen and (max-width: 486px) {
-  .homepageContact .Containedcircle:nth-child(1) {
-    height: 100%;
-  }
-  .homepageContact .Containedcircle:nth-child(2) {
-    display: none;
-  }
-
-  .homepageContact .Containedcircle:nth-child(3) {
-    height: 100%;
   }
 }
 
@@ -116,10 +96,16 @@
           text-align: left;
           strong {
             text-align: center;
-            padding: 15px 0 10px 0;
             font-size: 3em;
             display: block;
-            color: #ccb94e;
+            margin: 20px;
+            background: -webkit-linear-gradient(
+              #f0bdbd 0%,
+              #ddcc89 50%,
+              #102c26 100%
+            );
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
         p {
@@ -182,10 +168,13 @@
   z-index: 10;
   width: 100%;
   color: white;
+  text-align: center;
   padding: 80px 0;
   .featured {
     position: relative;
     padding-left: 40px;
+    font-size: 1em !important;
+    color: rgb(165, 163, 163);
     span:nth-child(1) {
       position: absolute;
       top: 50%;
@@ -264,21 +253,38 @@
   .hoverDetails {
     width: 100%;
     height: 100%;
-
     opacity: 0;
-    transition: 0.3s;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-
+    transition: opacity 0.5s;
     .hoverIcon {
-      font-size: 40px;
+      font-size: 30px;
       color: #ccb94e;
       margin: 0 20px;
       cursor: pointer;
       &:hover {
         color: #abccc1;
       }
+    }
+  }
+  &:after {
+    content: 'Featured Projects';
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 4em;
+    opacity: 0.2;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 1s;
+  }
+  &:hover {
+    &:after {
+      color: white;
+      opacity: 1;
     }
   }
 }
@@ -289,17 +295,20 @@
   letter-spacing: 2px;
 
   a {
-    color: #b19f3d;
+    color: black;
     background: 232931;
     padding: 10px 20px;
     border-radius: 66px;
     background: #21658c;
     box-shadow: 2px 2px 30px #194e6c, -2px -2px 30px #297cac;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #f4d03f 0%, #16a085 100%);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     &:hover {
-      color: #e6d474;
+      color: black;
       text-decoration: none;
-      background: #297cac;
-      box-shadow: 2px 2px 30px #2b678a, -2px -2px 30px #388ec0;
+      box-shadow: 0px 5px 20px rgba(46, 229, 157, 0.4);
+      background-image: linear-gradient(to right, #16a085 0%, #f4d03f 100%);
     }
   }
 }
@@ -336,66 +345,6 @@
     &:nth-child(4):hover {
       a {
         color: #e1306c;
-      }
-    }
-  }
-}
-.homepageContact {
-  max-width: 900px !important;
-  height: 400px;
-  padding: 40px;
-  .row {
-    width: 100%;
-    height: 100%;
-  }
-  .Containedcircle {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    cursor: pointer;
-    .circle {
-      width: 350px;
-      height: 350px;
-      text-align: center;
-      border: 10px solid #ccb94e;
-      border-color: white #ccb94e;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: 1s;
-      .textBtn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: white;
-        transform: translate(-50%, -50%);
-        span {
-          transition: 1s;
-        }
-        h1 {
-          transition: 1s;
-        }
-        &:hover {
-          span {
-            font-size: 20px;
-          }
-          h1 {
-            font-size: 62px;
-          }
-        }
-      }
-      &:hover {
-        // width: 200px;
-        // height: 200px;
-        border-color: #ccb94e white;
-        border-radius: 5%;
-        .textBtn {
-          color: #ccb94e;
-        }
       }
     }
   }
@@ -469,5 +418,73 @@
     letter-spacing: 2px;
     border-radius: 5px;
     cursor: pointer;
+  }
+}
+
+.Containedcircle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  cursor: pointer;
+  .circle {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+    .border-Box {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 10px solid #ccb94e;
+      border-color: white #ccb94e;
+      animation: borderAnime 40s infinite;
+      @keyframes borderAnime {
+        0% {
+          transform: rotate(0deg);
+          border-color: #ccb94e #423905;
+        }
+        50% {
+          transform: rotate(360deg);
+          border-color: white #ccb94e;
+        }
+        100% {
+          transform: rotate(0deg);
+          border-color: #ccb94e #423905;
+        }
+      }
+    }
+    .textBtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      transform: translate(-50%, -50%);
+      span {
+        transition: 1s;
+      }
+      h1 {
+        transition: 1s;
+      }
+      &:hover {
+        span {
+          font-size: 20px;
+        }
+        h1 {
+          font-size: 62px;
+        }
+      }
+    }
+    &:hover {
+      .textBtn {
+        color: #ccb94e;
+      }
+    }
   }
 }

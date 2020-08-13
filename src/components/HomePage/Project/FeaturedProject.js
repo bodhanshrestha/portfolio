@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import bg1 from '../assets/img/p1.png';
-import bg2 from '../assets/img/c3.png';
-import bg3 from '../assets/img/p3.png';
-import bg4 from '../assets/img/p4.png';
-import bg5 from '../assets/img/p5.png';
+import bg1 from '../../assets/img/p1.png';
+import bg2 from '../../assets/img/c3.png';
+import bg3 from '../../assets/img/p3.png';
+import bg4 from '../../assets/img/p4.png';
+import bg5 from '../../assets/img/p5.png';
 import HoverDetail from './HoverDetails';
-import { Link } from 'react-router-dom';
+
 const URL = 'http://bodhanshrestha.com.np';
 const Project = [
   { name: 'NGO', url: `${URL}/ngo/`, bg: bg2 },
@@ -60,19 +61,18 @@ export default class slider extends Component {
     };
     return (
       <div className='featuredProject'>
-        <h1
+        <div
           style={{
             width: '100%',
-            textAlign: 'left',
             padding: '0 40px',
           }}
         >
           <div className='featured'>
             <span></span>
             <span></span>
-            Featured Projects
+            Gimpse of Completed Projects
           </div>
-        </h1>
+        </div>
         <hr
           style={{
             width: '95%',

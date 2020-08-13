@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import bg1 from '../assets/img/c1.jpg';
-import bg2 from '../assets/img/c2.jpg';
-import bg3 from '../assets/img/c3.png';
-import bg4 from '../assets/img/c4.jpg';
-import bg5 from '../assets/img/c5.jpg';
-import bg6 from '../assets/img/c6.jpg';
+import bg2 from '../../assets/img/c2.jpg';
+import bg1 from '../../assets/img/c1.jpg';
+import bg3 from '../../assets/img/c3.png';
+import bg4 from '../../assets/img/c4.jpg';
+import bg5 from '../../assets/img/c5.jpg';
+import bg6 from '../../assets/img/c6.jpg';
 const SliderDetail = ({ background, content }) => (
   <div
     className='sliderDetail'

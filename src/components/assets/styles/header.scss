@@ -9,7 +9,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-$bg: #232931;
+$bg: #222222;
 $primary-color: #393e46;
 $secondary-color: #eeeeee;
 $med-green: #ccb94e;
@@ -59,7 +59,7 @@ $med-green: #ccb94e;
   font-family: 'Noto Sans JP', sans-serif;
   background: $bg;
   opacity: 0.95;
-  box-shadow: 0px 2.5px 30px #2f3741;
+  box-shadow: 0px 2.5px 30px #2c2c2c;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -139,6 +139,7 @@ $med-green: #ccb94e;
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     li {
       margin: 10px 0;
       width: 100px;

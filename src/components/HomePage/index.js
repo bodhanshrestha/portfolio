@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import DetailedContent from './DetailedContent';
-import FeaturedProject from './FeaturedProject';
-import ContactContainer from './ContactContainer';
+import DetailedContent from './Contact/DetailedContent';
+import FeaturedProject from './Project/FeaturedProject';
+import ContactContainer from './Contact/ContactContainer';
 import Quotes from '../Quotes/index';
-import ToTop from '../ToTop';
+import ToTop from '../Helper/ToTop';
 function Index() {
   useEffect(() => {
     document.body.style.overflowY = 'scroll';
@@ -16,6 +16,7 @@ function Index() {
       <Quotes />
       <ContactContainer />
       <ToTop />
+      <footer>footer</footer>
     </div>
   );
 }

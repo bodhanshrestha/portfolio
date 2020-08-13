@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-awesome-modal';
-import Social from '../HomePage/SocialIcons';
+import Social from '../Widgets/SocialIcons';
 const model = ({ visible, closeModal }) => {
   return (
     <Modal
@@ -13,6 +13,9 @@ const model = ({ visible, closeModal }) => {
       <div className='contactModel'>
         <h1>Contact</h1>
 
+        <p>
+          Thanks for taking the time to reach out. How can I help you today?
+        </p>
         <div className='phone'>
           <strong>Phone no :</strong>
           &nbsp;
