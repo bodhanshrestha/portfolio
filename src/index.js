@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import ScrollTop from './components/Helper/scrollToTop';
 import Header from './components/Header/header';
 import Body from './components/routes';
@@ -16,9 +16,9 @@ function App() {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <ScrollTop />
     <App />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
