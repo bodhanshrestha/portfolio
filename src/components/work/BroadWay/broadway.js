@@ -77,7 +77,7 @@ const Project = [
   },
 ];
 const ProjectLists = () =>
-  Project.map(({ name, url, bg, left, right, margin }) => (
+  Project.map(({ name, url, bg, left, right, margin }, i) => (
     <WorkContents
       title={name}
       url={url}
@@ -85,6 +85,7 @@ const ProjectLists = () =>
       left={left}
       right={right}
       margin={margin}
+      key={i}
     />
   ));
 const broadway = () => {

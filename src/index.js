@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import ScrollTop from './components/Helper/scrollToTop';
 import Header from './components/Header/header';
 import Body from './components/routes';

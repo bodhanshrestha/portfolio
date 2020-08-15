@@ -22,7 +22,15 @@ const model = ({ visible, closeModal }) => {
           <span>9880967785</span>
         </div>
 
+        <div className='location'>
+          <p>
+            <strong>Location : </strong>Jorpati,Kathmandu
+          </p>
+        </div>
         <div className='email'>
+          <p>
+            <strong>E-mail : </strong>bodhanshrestha@gmail.com
+          </p>
           <a href='mailTo:bodhanshrestha@gmail.com'>Mail Me</a>
         </div>
         <div className='medias'>

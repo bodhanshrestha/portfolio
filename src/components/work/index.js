@@ -31,6 +31,15 @@ const Index = () => {
             bg={broadwayImg}
           />
         </Link>
+        <Link to='/broadway'>
+          <WorkList
+            name='Broadway'
+            projectDetail1='Practice in institution'
+            projectDetail2='ThemeForest Websites'
+            color='white'
+            bg={broadwayImg}
+          />
+        </Link>
       </div>
       <Portfolio />
       <ToTop />

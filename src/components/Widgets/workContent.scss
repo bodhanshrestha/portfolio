@@ -14,7 +14,8 @@
     padding: 10px;
   }
   .completedProjects {
-    padding: 40px 10px !important;
+    border-radius: 10px !important;
+    padding: 20px 10px !important;
   }
 }
 @media only screen and (max-width: 386px) {
@@ -33,7 +34,9 @@
 }
 
 .completedProjects {
-  padding: 40px 20px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
   border-radius: 50px;
   background: linear-gradient(145deg, #20252c, #252c34);
   box-shadow: 20px 20px 60px #1e232a, -20px -20px 60px #282f38;

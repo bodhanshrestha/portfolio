@@ -11,15 +11,16 @@ const worklist = ({
   return (
     <div className='linkedProject'>
       <div className='row'>
-        <div className='col-sm-4 imageBlock'>
+        <div className='col-12 imageBlock'>
           <div
             className='projectImage'
             style={{
               backgroundImage: `url(${bg})`,
+              height: '100px',
             }}
           ></div>
         </div>
-        <div className='col-sm-8'>
+        <div className='col-12'>
           <div
             className='detail'
             style={{

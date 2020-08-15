@@ -44,6 +44,7 @@ const Index = () => {
     });
 
     document.body.style.overflow = 'hidden';
+    document.querySelector('.newBtn').style.display = 'none';
   }, []);
 
   return (

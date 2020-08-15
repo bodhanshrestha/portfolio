@@ -78,7 +78,7 @@ const Involved = () => {
             </div>
             <div className='col-12 col-md-9 inv-web'>
               {GraphicsData.map((item, i) => (
-                <SKILLS {...item} show={show} />
+                <SKILLS {...item} show={show} key={i} />
               ))}
             </div>
           </div>

@@ -12,50 +12,13 @@
 $bg: #222222;
 $primary-color: #393e46;
 $secondary-color: #eeeeee;
-$med-green: #ccb94e;
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 50;
-  }
-  100% {
-    width: 100;
-  }
-}
-@media screen and (max-width: 400px) {
-  .left {
-    a {
-      &:hover {
-        .nameFlow {
-          span {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-  .middle .activeMiddleContent a {
-    width: 9em;
-  }
-  .right ul li a {
-    width: 9em;
-  }
-}
-@media screen and (max-width: 360px) {
-  .middle .activeMiddleContent a {
-    width: 6em !important;
-  }
-  .right ul li a {
-    width: 6em !important;
-  }
-}
+$med-yellow: #ccb94e;
+
 .header {
   width: 100%;
   margin: auto;
   @include flexed();
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-family: 'Noto Sans JP', sans-serif;
   background: $bg;
   opacity: 0.95;
@@ -64,102 +27,97 @@ $med-green: #ccb94e;
   position: fixed;
   top: 0;
   left: 0;
+  transition: padding 0.3s;
   z-index: 999;
 }
-
+.window-bar {
+  background: linear-gradient(
+    to right,
+    rgb(59, 54, 1),
+    rgb(108, 109, 29),
+    rgb(240, 240, 37)
+  );
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
 .left {
   a {
-    font-size: 42px;
-    font-style: italic;
     color: $secondary-color;
-    transition: 0.5s;
     display: block;
     position: relative;
-    width: 60px;
+    font-size: 30px;
     &:hover {
-      color: $med-green;
-      transition: 0.5s;
-      text-decoration: none;
-      .nameFlowDiv {
-        .nameFlow {
-          display: inline-block;
-        }
-      }
+      color: $med-yellow;
     }
-    .nameFlowDiv {
-      position: absolute;
-      top: 0;
-      left: 100%;
-
-      .nameFlow {
-        margin-left: 10px;
-        display: none;
-        font-size: medium;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 30em;
-        animation: type 1s steps(60, end);
-      }
-    }
-  }
-}
-.middle {
-  text-align: center;
-  .activeMiddleContent {
-    display: block;
-    list-style: none;
-    a {
-      font-size: 22px;
-      color: $med-green;
-      letter-spacing: 2px;
-      position: relative;
-      transition: 0.5s;
-      font-weight: 900;
-      text-transform: uppercase;
-      display: block;
-      white-space: nowrap;
-      width: 9.6em;
-      animation: type 5s steps(60, end);
-      overflow: hidden;
-      &:hover {
-        color: $med-green;
-        text-decoration: none;
-        transition: 0.5s;
-        margin-left: -5px;
-      }
-    }
-  }
-  .hiddenMiddleContent {
-    display: none;
   }
 }
 .right {
-  font-family: 'Passion One', cursive;
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  svg {
+    font-size: 40px !important;
+    &:hover {
+      color: $med-yellow;
+    }
+  }
+}
+.full_nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #222222;
+  z-index: 1000;
+  .top_right {
+    position: absolute;
+    top: 0%;
+    right: 30px;
+    font-size: 3.8rem;
+    font-weight: 900;
+    color: gray;
+    transition: color 0.3s;
+    &:hover {
+      color: white;
+    }
+  }
+  .nav_Links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    list-style-type: none;
     li {
-      margin: 10px 0;
-      width: 100px;
       a {
-        font-size: 22px;
         color: $secondary-color;
-        letter-spacing: 2px;
         position: relative;
         transition: 0.5s;
         font-weight: 700;
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        width: 9.6em;
-        animation: type 5s steps(60, end);
+        text-align: center;
+        transition: color 0.5s;
+        background: -webkit-linear-gradient(
+          #f0bdbd 0%,
+          #ddcc89 50%,
+          #102c26 100%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         &:hover {
-          color: $med-green;
           text-decoration: none;
           transition: 0.5s;
           margin-left: -5px;
+          background: $med-yellow;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
           span {
             opacity: 1;
             margin-top: 10px;
@@ -179,4 +137,22 @@ $med-green: #ccb94e;
       }
     }
   }
+}
+
+.nav-enter {
+  opacity: 0;
+}
+
+.nav-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 300ms;
+}
+
+.nav-exit {
+  opacity: 0;
+}
+
+.nav-exit-active {
+  opacity: 0;
+  transition: opacity 300ms linear;
 }
