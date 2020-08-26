@@ -81,7 +81,8 @@ body {
 .newBtn {
   position: fixed;
   bottom: 10%;
-  left: 0;
+  left: -30px;
+
   transform: rotate(90deg);
   z-index: 400;
   animation: scrollDown 6s infinite;
@@ -112,5 +113,70 @@ body {
       bottom: 10%;
       color: #ccb94e;
     }
+  }
+}
+
+.curser {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  border: 1px solid #ccb94e;
+  z-index: 10001;
+  transition-timing-function: ease-out;
+  animation: curserAnime 0.5s infinite alternate;
+  &:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 8px solid #ccb94e;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    animation: curserAnime2 0.5s infinite alternate;
+  }
+}
+@keyframes curserAnime {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes curserAnime2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+@keyframes curserAnime3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: curserAnime3 0.3s forwards;
+  border: 1px solid red;
+}
+@media screen and (max-width: 1024px) {
+  .curser {
+    opacity: 0 !important;
+  }
+  .expand {
+    opacity: 0;
   }
 }
