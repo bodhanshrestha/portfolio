@@ -71,9 +71,9 @@ function App() {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <ScrollTop />
     <App />
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
