@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import ContactModel from '../../Contact/model';
 const ContainerDetail = ({ que, btn, click }) => (
   <div className='circle' onClick={click}>
+    <span className='first'></span>
+    <span className='second'></span>
+    <span className='third'></span>
     <div className='border-Box'></div>
     <div className='textBtn'>
       <span>{que}</span>
@@ -36,11 +39,6 @@ function ContactContainer() {
         </div>
       </div>
       <ContactModel visible={visible} closeModal={closeModal} />
-      {/* <div className='explore'>
-        <div className='exploreH'>
-          <div>Explore More</div>
-        </div>
-      </div> */}
     </div>
   );
 }

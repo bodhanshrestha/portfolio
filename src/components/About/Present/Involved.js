@@ -12,18 +12,25 @@ import VISUAL from '../../assets/svg/involved/visual-studio-code-1.svg';
 import Graphics from '../../assets/svg/involved/graphic.svg';
 import Editor from '../../assets/svg/involved/editor.svg';
 import REACT from '../../assets/svg/involved/react.svg';
+import { CSSTransition } from 'react-transition-group';
+
 const SKILLS = ({ icon, alt, per, show }) => (
   <div className='inv-skills'>
     <img src={`${icon}`} alt={alt} />
-    {show ? (
-      <div className='skill-bar'>
-        <div className='per' style={{ width: `${per}%` }}>
-          {per}%
-        </div>
-      </div>
-    ) : null}
+    <CSSTransition in={show} classNames='percentage' timeout={100}>
+      <>
+        {show ? (
+          <div className='skill-bar'>
+            <div className='per' style={{ width: `${per}%` }}>
+              {per}%
+            </div>
+          </div>
+        ) : null}
+      </>
+    </CSSTransition>
   </div>
 );
+
 const Involved = () => {
   const Web = [
     { icon: Html, alt: 'Html5', per: '90' },
@@ -38,6 +45,14 @@ const Involved = () => {
   ];
   const [show, setShow] = useState(false);
   const [prev, setPrev] = useState(true);
+  const [inv] = useState(React.createRef());
+  const scrollDown = () => {
+    window.scroll({
+      top: inv.current.offsetTop - 100,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className='inv'>
       <h1>
@@ -48,6 +63,7 @@ const Involved = () => {
             onClick={() => {
               setShow(true);
               setPrev(false);
+              scrollDown();
             }}
           >
             Experience
@@ -68,7 +84,7 @@ const Involved = () => {
         )}
       </h1>
       <div className='container'>
-        <div className='box-involved'>
+        <div className='box-involved' ref={inv}>
           {/* Graphics Design */}
 
           <div className='row'>

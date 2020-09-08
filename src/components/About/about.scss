@@ -225,6 +225,7 @@
     padding: 10px 0 0 0;
     line-height: 2;
   }
+
   &:after {
     content: '';
     width: 80%;
@@ -395,4 +396,23 @@
       padding: 5px;
     }
   }
+}
+
+.percentage-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.percentage-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 400ms;
+}
+
+.percentage-exit {
+  opacity: 0;
+}
+
+.percentage-exit-active {
+  opacity: 0;
+  transition: opacity 200ms linear;
 }

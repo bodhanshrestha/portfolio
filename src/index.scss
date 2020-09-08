@@ -4,16 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import './components/assets/styles/header.scss';
+@import './components/Header/header.scss';
 @import './components/assets/styles/bootstrap.min.css';
-@import './components/assets/styles/body.scss';
-@import './components/assets/styles/home.scss';
-@import './components/assets/styles/about.scss';
-@import './components/assets/styles/contact.scss';
-@import './components/assets/styles/work.scss';
+@import './components/HomePage/home.scss';
+@import './components/About/about.scss';
+@import './components/Contact/contact.scss';
+@import './components/work/work.scss';
 @import './components/Widgets/workContent.scss';
-@import './components/assets/styles/quote.scss';
-@import './components/assets/styles/topBtn.scss';
+@import './components/Quotes/quote.scss';
+@import './components/Helper/topBtn.scss';
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +38,11 @@ body {
 }
 ::-webkit-scrollbar {
   width: 0px;
+}
+.body-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .footer {

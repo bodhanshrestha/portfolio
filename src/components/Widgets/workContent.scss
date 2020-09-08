@@ -59,7 +59,7 @@
     padding: 20px;
     h1 {
       width: 100%;
-      font-size: 4em;
+      font-size: 3em;
       font-weight: 900;
       letter-spacing: 2px;
       position: relative;
@@ -67,7 +67,7 @@
       &:before {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         left: 0;
         width: 10%;
         height: 3px;
@@ -76,7 +76,7 @@
       &:after {
         content: '';
         position: absolute;
-        bottom: 10px;
+        bottom: -20px;
         left: 0;
         width: 5%;
         height: 3px;
@@ -89,7 +89,7 @@
     }
   }
   .fieldVisit {
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: 900;
     letter-spacing: 2px;
     padding: 10px;

@@ -12,6 +12,7 @@
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 2px;
+
     .quoteOfDay {
       margin: 40px 0;
       width: 100%;
@@ -56,6 +57,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 20px;
         p {
           font-style: italic;
         }

@@ -12,7 +12,7 @@ const ToTop = () => {
     }
   }, []);
   return (
-    <div className='newBtn' style={{ opacity: show }}>
+    <div className='newBtn' style={{ opacity: show, userSelect: 'none' }}>
       Scroll Down &nbsp; &nbsp;
       <FontAwesomeIcon icon={faLongArrowAltUp} />
     </div>

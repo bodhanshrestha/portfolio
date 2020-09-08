@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import ScrollTop from './components/Helper/scrollToTop';
 import Header from './components/Header/header';
 import Body from './components/routes';
@@ -43,28 +43,32 @@ function App() {
     }
 
     const curser = document.querySelector('.curser');
-
-    document.addEventListener('mousemove', (e) => {
-      curser.setAttribute(
-        'style',
-        'top:' +
-          (e.pageY - 20) +
-          'px;left:' +
-          (e.pageX + 20) +
-          'px; transition:60ms;'
-      );
-    });
-    document.addEventListener('click', () => {
-      curser.classList.add('expand');
-      setTimeout(() => {
-        curser.classList.remove('expand');
-      }, 500);
-    });
+    if (document.body.clientWidth > 768) {
+      document.addEventListener('mousemove', (e) => {
+        curser.setAttribute(
+          'style',
+          'top:' +
+            (e.pageY - 20) +
+            'px;left:' +
+            (e.pageX + 20) +
+            'px; transition:60ms;'
+        );
+      });
+      document.addEventListener('click', () => {
+        curser.classList.add('expand');
+        setTimeout(() => {
+          curser.classList.remove('expand');
+        }, 500);
+      });
+    } else {
+      curser.style.display = 'none';
+    }
   }, []);
   return (
     <div className='App'>
       <Header />
       <Body />
+
       <div className='curser'></div>
     </div>
   );

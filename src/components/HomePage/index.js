@@ -4,6 +4,7 @@ import FeaturedProject from './Project/FeaturedProject';
 import ContactContainer from './Contact/ContactContainer';
 import Quotes from '../Quotes/index';
 import ToTop from '../Helper/ToTop';
+import Footer from '../Footer';
 function Index() {
   useEffect(() => {
     document.body.style.overflowY = 'scroll';
@@ -16,7 +17,7 @@ function Index() {
       <Quotes />
       <ContactContainer />
       <ToTop />
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 }

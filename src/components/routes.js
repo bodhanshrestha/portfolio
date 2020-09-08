@@ -7,7 +7,6 @@ import ReactProject from './work/React/ReactProject';
 import Broadway from './work/BroadWay/broadway';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Down from './Helper/scrollDown';
-
 const AnimatedSwitch = withRouter(({ location }) => (
   <TransitionGroup className='page'>
     <CSSTransition
@@ -30,6 +29,7 @@ function routes() {
   return (
     <div className='body-section'>
       <AnimatedSwitch />
+
       <Down />
     </div>
   );

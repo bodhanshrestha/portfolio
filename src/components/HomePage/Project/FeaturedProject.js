@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import bg1 from '../../assets/img/p1.png';
-import bg2 from '../../assets/img/c3.png';
-import bg3 from '../../assets/img/p3.png';
-import bg4 from '../../assets/img/p4.png';
-import bg5 from '../../assets/img/p5.png';
+import CELEB from '../../assets/img/p1.png';
+import CHARITY from '../../assets/img/p2.png';
+import SITE from '../../assets/img/p3.png';
+import NEWS from '../../assets/img/p4.png';
+import NGO from '../../assets/img/p5.png';
 import HoverDetail from './HoverDetails';
 
 const URL = 'http://bodhanshrestha.com.np';
 const Project = [
-  { name: 'NGO', url: `${URL}/ngo/`, bg: bg2 },
-  { name: 'News', url: `${URL}/news/`, bg: bg4 },
-  { name: 'Charity', url: `${URL}/charity/`, bg: bg5 },
-  { name: 'Cooperate Site', url: `${URL}/fluxo/`, bg: bg3 },
-  { name: 'Celebrity', url: `${URL}/burbank/`, bg: bg1 },
+  { name: 'NGO', url: `${URL}/ngo/`, bg: NGO },
+  { name: 'News', url: `${URL}/news/`, bg: NEWS },
+  { name: 'Charity', url: `${URL}/charity/`, bg: CHARITY },
+  { name: 'Cooperate Site', url: `${URL}/fluxo/`, bg: SITE },
+  { name: 'Celebrity', url: `${URL}/burbank/`, bg: CELEB },
 ];
 const SliderDetail = ({ background, url }) => (
   <div
