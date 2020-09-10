@@ -7,6 +7,9 @@ import ReactProject from './work/React/ReactProject';
 import Broadway from './work/BroadWay/broadway';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Down from './Helper/scrollDown';
+import underConstruction from './Not Found/underConstruction';
+import Particles from './ParticleJS/particle';
+
 const AnimatedSwitch = withRouter(({ location }) => (
   <TransitionGroup className='page'>
     <CSSTransition
@@ -16,8 +19,9 @@ const AnimatedSwitch = withRouter(({ location }) => (
       unmountOnExit
     >
       <Switch location={location}>
-        <Route path='/broadway' component={Broadway} />
         <Route path='/reactProject' component={ReactProject} />
+        <Route path='/broadway' component={Broadway} />
+        <Route path='/underConstruction' component={underConstruction} />
         <Route path='/about' component={About} />
         <Route path='/work' component={Work} />
         <Route path='/' exact component={Home} />
@@ -28,8 +32,10 @@ const AnimatedSwitch = withRouter(({ location }) => (
 function routes() {
   return (
     <div className='body-section'>
+      <div className='background'>
+        <Particles />
+      </div>
       <AnimatedSwitch />
-
       <Down />
     </div>
   );

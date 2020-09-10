@@ -37,13 +37,13 @@ const Index = () => {
   const closeModal = () => setVisible(false);
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
     window.scrollTo({
       top: '100px',
       left: 0,
       behavior: 'smooth',
     });
 
-    document.body.style.overflow = 'hidden';
     document.querySelector('.newBtn').style.display = 'none';
   }, []);
 

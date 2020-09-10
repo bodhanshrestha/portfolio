@@ -4,6 +4,7 @@ import WorkList from './worklistBlock';
 import broadwayImg from '../assets/img/broad.png';
 import Portfolio from './portfolioTimeline';
 import reactLogo from '../assets/img/logo512.png';
+import MERNlogo from '../assets/img/me.png';
 import ToTop from '../Helper/ToTop';
 const Index = () => {
   useEffect(() => {
@@ -31,13 +32,12 @@ const Index = () => {
             bg={broadwayImg}
           />
         </Link>
-        <Link to='/broadway'>
+        <Link to='/underConstruction'>
           <WorkList
-            name='Broadway'
-            projectDetail1='Practice in institution'
-            projectDetail2='ThemeForest Websites'
+            name='MERN'
+            projectDetail1='Practicing'
             color='white'
-            bg={broadwayImg}
+            bg={MERNlogo}
           />
         </Link>
       </div>

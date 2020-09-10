@@ -2,9 +2,11 @@ import React from 'react';
 import Involved from './Involved';
 import Education from '../Past/Education';
 import webPic from '../../assets/img/backgg.png';
+import All from '../All/All';
 const Present = () => {
   return (
     <div className='present'>
+      <All />
       <h1>Present</h1>
       <div className='container'>
         <div className='row'>

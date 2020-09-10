@@ -1,7 +1,14 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .quotes {
     a {
-      font-size: 1em !important ;
+      font-size: 1.6em !important ;
+    }
+  }
+}
+@media screen and (max-width: 572px) {
+  .quotes {
+    a {
+      font-size: 1.2em !important ;
     }
   }
 }
@@ -76,7 +83,6 @@
     }
     .title {
       padding-top: 10px;
-      font-family: 'Dancing Script', cursive;
       letter-spacing: 1px;
       text-decoration: underline;
     }

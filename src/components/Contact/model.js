@@ -33,6 +33,8 @@ const Model = ({ visible, closeModal }) => {
             </div>
             <div className='col-9 col-md-9 col-sm-9 col-lg-5 text-left right'>
               <div className='details'>
+                <h4 className='text-center'>Bodhan Shrestha</h4>
+                <hr />
                 <h4>
                   <Icons name={faMobileAlt} />
                   <div className='name'>Phone no :</div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Education from './Education';
 import SmallBoy from '../../assets/img/smallBoy.png';
+import All from '../All/All';
 const Edu = [
   {
     name: 'Hilary High School',
@@ -26,6 +27,7 @@ const Edu = [
 const Past = () => {
   return (
     <div className='past'>
+      <All />
       <h1>Past</h1>
       <div className='container'>
         <div className='row'>

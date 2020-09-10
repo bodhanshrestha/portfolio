@@ -5,7 +5,32 @@ import {
   faUniversity,
 } from '@fortawesome/free-solid-svg-icons';
 const URL = 'http://bodhanshrestha.com.np';
+const GITHUB = 'https://shrestha8050.github.io';
 const ContentItems = [
+  {
+    type: 'react',
+    title: 'Calculator',
+    detail: {
+      firstDetail: 'React App',
+      secondDetail: null,
+    },
+    date: '2020',
+    icon: faReact,
+    url: `${GITHUB}/calculator/`,
+    align: 'right',
+  },
+  {
+    type: 'react',
+    title: 'Hangman Game',
+    detail: {
+      firstDetail: 'React App',
+      secondDetail: null,
+    },
+    date: '2020',
+    icon: faReact,
+    url: `${GITHUB}/hangman/`,
+    align: 'right',
+  },
   {
     type: 'react',
     title: 'Movie App',
@@ -15,7 +40,7 @@ const ContentItems = [
     },
     date: '2020',
     icon: faReact,
-    url: 'https://shrestha8050.github.io/Movie-Finder/#/',
+    url: `${GITHUB}/Movie-Finder/#/`,
     align: 'right',
   },
   {
@@ -27,7 +52,7 @@ const ContentItems = [
     },
     date: '2020',
     icon: faReact,
-    url: 'https://shrestha8050.github.io/Weather/',
+    url: `${GITHUB}/Weather/`,
     align: 'right',
   },
   {
@@ -50,6 +75,14 @@ const ContentItems = [
     spanTitle: 'Copyright Themes from themeforest',
     date: '2019 - 2020',
     align: 'right',
+  },
+  {
+    type: 'work',
+    title: 'E-Commerce',
+    date: '2019 - 2020',
+    icon: faUniversity,
+    align: 'right',
+    url: `${URL}/e-commerce`,
   },
   {
     type: 'work',

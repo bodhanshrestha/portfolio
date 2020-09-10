@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import './components/Header/header.scss';
 @import './components/assets/styles/bootstrap.min.css';
 @import './components/HomePage/home.scss';
@@ -12,7 +11,7 @@
 @import './components/work/work.scss';
 @import './components/Widgets/workContent.scss';
 @import './components/Quotes/quote.scss';
-@import './components/Helper/topBtn.scss';
+@import './components/Helper/btn.scss';
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +22,6 @@ html {
 }
 body {
   background: #222222 !important;
-  font-family: 'PT Sans Narrow', sans-serif;
 }
 .App {
   color: #eeeeee;
@@ -43,6 +41,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .footer {
@@ -82,44 +81,6 @@ body {
   transition: opacity 200ms linear;
 }
 
-.newBtn {
-  position: fixed;
-  bottom: 10%;
-  left: -30px;
-
-  transform: rotate(90deg);
-  z-index: 400;
-  animation: scrollDown 6s infinite;
-  svg {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-
-    transform: rotate(90deg);
-    animation: fasterSvg 2s infinite;
-  }
-  @keyframes fasterSvg {
-    0% {
-      right: -10%;
-      color: white;
-    }
-    100% {
-      right: -30%;
-      color: #ccb94e;
-    }
-  }
-  @keyframes scrollDown {
-    0% {
-      bottom: 20%;
-      color: white;
-    }
-    100% {
-      bottom: 10%;
-      color: #ccb94e;
-    }
-  }
-}
-
 .curser {
   width: 40px;
   height: 40px;
@@ -127,9 +88,10 @@ body {
   top: 0;
   border-radius: 50%;
   border: 1px solid #ccb94e;
-  z-index: 10001;
+  z-index: 1001;
   transition-timing-function: ease-out;
   animation: curserAnime 0.5s infinite alternate;
+  opacity: 0;
   &:after {
     content: '';
     width: 20px;
@@ -173,6 +135,7 @@ body {
 }
 
 .expand {
+  opacity: 1;
   animation: curserAnime3 0.3s forwards;
   border: 1px solid red;
 }
@@ -182,5 +145,18 @@ body {
   }
   .expand {
     opacity: 0;
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  #tsparticles {
+    width: 100%;
+    height: 100%;
   }
 }

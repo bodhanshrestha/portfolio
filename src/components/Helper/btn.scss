@@ -1,0 +1,72 @@
+.topBtn {
+  width: 50px !important;
+  height: 50px;
+  background: #c71d1d;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  z-index: 998;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    background: #c71d1d;
+    box-shadow: 2px 10px 10px #b11616b9;
+    transform: translateY(-5px);
+    svg {
+      font-size: 1.2em;
+      margin-top: -2px;
+    }
+  }
+}
+
+.btnShow {
+  opacity: 1;
+}
+.btnHide {
+  opacity: 0;
+}
+
+.newBtn {
+  position: fixed;
+  bottom: 10%;
+  left: -30px;
+  opacity: 0.5;
+  transform: rotate(90deg);
+  z-index: 400;
+  animation: scrollDown 6s infinite;
+  user-select: none;
+  svg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    transform: rotate(90deg);
+    animation: fasterSvg 2s infinite;
+  }
+  @keyframes fasterSvg {
+    0% {
+      right: -10%;
+      color: white;
+    }
+    100% {
+      right: -30%;
+      color: #ccb94e;
+    }
+  }
+  @keyframes scrollDown {
+    0% {
+      bottom: 20%;
+      color: white;
+    }
+    100% {
+      bottom: 10%;
+      color: #ccb94e;
+    }
+  }
+}

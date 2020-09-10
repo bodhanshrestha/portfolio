@@ -48,7 +48,7 @@ function App() {
         curser.setAttribute(
           'style',
           'top:' +
-            (e.pageY - 20) +
+            (e.pageY + 20) +
             'px;left:' +
             (e.pageX + 20) +
             'px; transition:60ms;'
@@ -68,7 +68,6 @@ function App() {
     <div className='App'>
       <Header />
       <Body />
-
       <div className='curser'></div>
     </div>
   );

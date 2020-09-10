@@ -1,0 +1,16 @@
+.all-details {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  .d-name {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .d-email {
+    a {
+      color: white;
+    }
+  }
+  margin-bottom: 30px;
+}
