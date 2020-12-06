@@ -8,9 +8,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 const Icons = [
   { name: faFacebookF, url: 'https://www.facebook.com/bodhanshrestha' },
-  { name: faTwitter, url: 'hello' },
-  { name: faLinkedinIn, url: 'hello' },
-  { name: faInstagram, url: 'hello' },
+  { name: faTwitter, url: 'https://twitter.com/BodhanShrestha' },
+  {
+    name: faLinkedinIn,
+    url: 'https://www.linkedin.com/in/bodhan-shrestha-9220a019b/',
+  },
+  { name: faInstagram, url: 'https://www.instagram.com/shrestha_bodhan/' },
 ];
 function SocialIcons() {
   return (

@@ -42,41 +42,41 @@ function App() {
       }
     }
 
-    const curser = document.querySelector('.curser');
-    if (document.body.clientWidth > 768) {
-      document.addEventListener('mousemove', (e) => {
-        curser.setAttribute(
-          'style',
-          'top:' +
-            (e.pageY + 20) +
-            'px;left:' +
-            (e.pageX + 20) +
-            'px; transition:60ms;'
-        );
-      });
-      document.addEventListener('click', () => {
-        curser.classList.add('expand');
-        setTimeout(() => {
-          curser.classList.remove('expand');
-        }, 500);
-      });
-    } else {
-      curser.style.display = 'none';
-    }
+    // const curser = document.querySelector('.curser');
+    // if (document.body.clientWidth > 768) {
+    //   document.addEventListener('mousemove', (e) => {
+    //     curser.setAttribute(
+    //       'style',
+    //       'top:' +
+    //         (e.pageY + 20) +
+    //         'px;left:' +
+    //         (e.pageX + 20) +
+    //         'px; transition:60ms;'
+    //     );
+    //   });
+    //   document.addEventListener('click', () => {
+    //     curser.classList.add('expand');
+    //     setTimeout(() => {
+    //       curser.classList.remove('expand');
+    //     }, 500);
+    //   });
+    // } else {
+    //   curser.style.display = 'none';
+    // }
   }, []);
   return (
     <div className='App'>
       <Header />
       <Body />
-      <div className='curser'></div>
+      {/* <div className='curser'></div> */}
     </div>
   );
 }
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <ScrollTop />
     <App />
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById('root')
 );

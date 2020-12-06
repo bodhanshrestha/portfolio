@@ -27,7 +27,7 @@ const Index = () => {
           <WorkList
             name='Broadway'
             projectDetail1='Practice in institution'
-            projectDetail2='ThemeForest Websites'
+            projectDetail2='ThemeForest Websites(Copyright Included)'
             color='white'
             bg={broadwayImg}
           />

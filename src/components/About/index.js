@@ -13,7 +13,13 @@ const Index = () => {
   const [about] = useState([
     { id: 1, title: 'My Story', icon: faHistory },
     { id: 2, title: 'My Present', icon: faSmile },
-    { id: 3, title: 'My Resume', icon: faFilePdf },
+    {
+      id: 3,
+      title: 'My Resume',
+      icon: faFilePdf,
+      url:
+        'https://mega.nz/file/fsQ0xZ4Q#0jspg687VpNZK9uUetgR2MjqAhGGVH3FD7clqgZaCrk',
+    },
   ]);
 
   const [show, setShow] = useState(false);
