@@ -7,29 +7,29 @@ const weatherURL = 'https://shrestha8050.github.io/Weather/';
 const movieURL = 'https://shrestha8050.github.io/Movie-Finder/#/';
 
 const ReactProject = () => {
-  return (
-    <div className='reactProject'>
-      <h1>React Projects</h1>
-      <WorkContents
-        title='Weather App'
-        bg={weather}
-        url={`${weatherURL}`}
-        detail='This the Weather App Used to Find the current weater of your ccity'
-        left={true}
-        right={true}
-      />
-      <WorkContents
-        title='Movie App'
-        bg={movie}
-        url={`${movieURL}`}
-        detail='This the Weather App Used to Find the current weater of your ccity'
-        left={false}
-        right={false}
-        margin={140}
-      />
-      <ToTop />
-    </div>
-  );
+	return (
+		<div className='reactProject'>
+			<h1>React Projects</h1>
+			<WorkContents
+				title='Weather App'
+				bg={weather}
+				url={`${weatherURL}`}
+				detail='This the Weather App Used to Find the current weather of your city'
+				left={true}
+				right={true}
+			/>
+			<WorkContents
+				title='Movie App'
+				bg={movie}
+				url={`${movieURL}`}
+				detail='This the Movie Searching App Used to Find the available movies'
+				left={false}
+				right={false}
+				margin={140}
+			/>
+			<ToTop />
+		</div>
+	);
 };
 
 export default ReactProject;

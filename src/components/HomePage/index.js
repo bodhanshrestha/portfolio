@@ -6,20 +6,20 @@ import Quotes from '../Quotes/index';
 import ToTop from '../Helper/ToTop';
 import Footer from '../Footer';
 function Index() {
-  useEffect(() => {
-    document.body.style.overflowY = 'scroll';
-  }, []);
+	useEffect(() => {
+		document.body.style.overflowY = 'scroll';
+	}, []);
 
-  return (
-    <div className='home'>
-      <DetailedContent />
-      <FeaturedProject />
-      <Quotes />
-      <ContactContainer />
-      <ToTop />
-      <Footer />
-    </div>
-  );
+	return (
+		<div className='home'>
+			<DetailedContent />
+			<FeaturedProject />
+			<Quotes />
+			<ContactContainer />
+			<ToTop />
+			<Footer />
+		</div>
+	);
 }
 
 export default Index;
